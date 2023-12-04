@@ -17,6 +17,8 @@ The input data consists of a PostgreSQL table named `shipping` with various attr
 
 ## Input Data Structure
 
+![](https://github.com/TenebrisX/de-project-sprint-2/blob/main/old_schema.png)
+
 The `shipping` table includes the following columns:
 - `ID`
 - `shipping_id`
@@ -40,7 +42,10 @@ The `shipping` table includes the following columns:
 - `shipping_country_base_rate`
 - `vendor_agreement_description`
 
+the data is here [shipping_data.csv](https://raw.githubusercontent.com/TenebrisX/de-project-sprint-2/main/shipping_data.csv)
 ## Output Data
+
+![](https://github.com/TenebrisX/de-project-sprint-2/blob/main/new_schema.png)
 
 The output data consists of several tables and a view:
 
