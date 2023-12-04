@@ -71,12 +71,13 @@ create table if not exists shipping_info (
 
 
 -- creating table "shipping_status"
--- of "status", "state" , "shipping_start_fact_datetime", and "shipping_end_fact_datetime" 
--- column from shipping table.
+-- from "status" and "state" columns from "shipping" 
+-- calculating "shipping_start_fact_datetime" - date when booked, 
+-- and "shipping_end_fact_datetime" date when recieved.
 		
 -- shipping_status creation
 create table if not exists shipping_status (
-	shipping_id bigint null,
+	shipping_id bigint not null primary key,
 	status text null,
 	state text null,
 	shipping_start_fact_datetime timestamp null,
